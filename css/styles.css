@@ -66,8 +66,8 @@ header {
   align-items: center;
   gap: 28px;
   height: var(--header-h);
-  padding-left: max(24px, calc((100vw - 1080px) / 2 + 24px));
-  padding-right: 32px;
+  padding-left: 40px;
+  padding-right: max(32px, calc((100vw - 1080px) / 2 + 32px));
 }
 
 .logo {
@@ -153,13 +153,13 @@ header {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  padding: 24px 56px 24px 120px;
-  max-width: 600px;
+  padding: 24px 40px 24px 160px;
+  max-width: 800px;
   overflow: hidden;
 }
 
 .hero-text h1 {
-  font-size: clamp(1.8rem, 2.9vw, 2.3rem);
+  font-size: clamp(2.1rem, 3.4vw, 2.7rem);
   line-height: 1.25;
 }
 
@@ -177,7 +177,7 @@ header {
 .hero-desc {
   font-size: 0.9rem;
   color: var(--text-soft);
-  max-width: 440px;
+  max-width: 620px;
 }
 
 .btn {
@@ -288,7 +288,17 @@ section { padding: 90px 24px; }
 
 /* ---------- Sobre ---------- */
 
-#sobre { padding: 48px 24px; }
+#sobre {
+  padding: 48px 24px;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg);
+  background-image: url('../img/sobre-fundo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .sobre {
   display: grid;
@@ -297,6 +307,15 @@ section { padding: 90px 24px; }
   align-items: center;
   max-width: 1080px;
   margin: 0 auto;
+}
+
+.sobre-foto {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
 }
 
 .sobre-texto .eyebrow {
@@ -309,7 +328,9 @@ section { padding: 90px 24px; }
 
 .sobre-texto h2 { font-size: clamp(1.7rem, 3vw, 2.2rem); margin-bottom: 18px; }
 
-.sobre-texto p { color: var(--text-soft); margin-bottom: 14px; }
+.sobre-texto p { color: #1a1512; margin-bottom: 14px; }
+
+.sobre-texto .italic-accent { color: #5f4b2e; }
 
 /* ---------- Serviços ---------- */
 
@@ -472,6 +493,7 @@ section { padding: 90px 24px; }
   width: 100%;
   height: 260px;
   object-fit: cover;
+  object-position: center 80%;
   border-radius: var(--radius);
   border: 1px solid var(--border);
   transition: transform 0.3s;
@@ -711,6 +733,15 @@ section { padding: 90px 24px; }
     backdrop-filter: blur(6px);
     padding: 24px 24px 28px;
     gap: 8px;
+  }
+
+  /* O fundo composto (foto + área lisa) foi desenhado pra proporção larga do
+     desktop — empilhado e mais alto que largo, o "cover" só mostraria uma
+     fatia recortada aleatória da foto. Melhor cair pra cor sólida aqui; o
+     retrato real (.sobre-foto) e o texto já carregam a seção sozinhos. */
+  #sobre {
+    min-height: 0;
+    background-image: none;
   }
 }
 

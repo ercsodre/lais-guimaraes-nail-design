@@ -14,10 +14,11 @@ HTML/CSS/JS puro, sem build. Abrir `index.html` direto no navegador já funciona
 - [x] Tabela de preços em `index.html` (seção `#precos`) — valores reais, com seleção por checkbox e total calculado ao vivo, enviando o orçamento pro WhatsApp
 - [x] Foto do hero — `img/hero.png`, composição da Lais preparada no Photoshop (1440×800, com degradê pro fundo já embutido)
 - [x] Localização (`#localizacao`) — mapa incorporado + botão "Como chegar" que usa a geolocalização do visitante pra montar a rota; endereço (Avenida Olinda, Jardim Novo Mundo, Goiânia-GO) veio de geocodificação reversa das coordenadas do Google Maps — **confirmar se o número do endereço está certo, não veio no link**
-- [ ] `img/portfolio-1.jpg` a `portfolio-5.jpg` são fotos de banco (Unsplash, uso livre) só pra visualizar o layout — trocar pelos trabalhos reais do Instagram @laysgrocha antes de publicar
-- [ ] Foto da Lais na seção Sobre e avatar do linktree — ainda `.img-placeholder` (não usamos banco de imagens aí de propósito, só pode ser foto real dela)
-- [ ] 6º card do portfólio ainda é placeholder — completar com mais uma foto real
-- [ ] Logo real em `identidade/logo.png` (ainda não fornecido — ver observação no design-guide)
+- [x] `img/portfolio-1.jpg` a `portfolio-6.jpg` — fotos reais dos trabalhos da Lais (trocadas em 26/08/2026)
+- [x] Foto da Lais na seção Sobre — `img/sobre-retrato.jpg`, retrato real dela
+- [x] 6º card do portfólio preenchido com foto real
+- [x] Logo real (monograma "lg" + nome) em `img/logo.png`, `img/logo-nome.png`, `img/logo-completa.png`
+- [ ] Avatar do linktree — ainda `.img-placeholder`, sem foto real
 - [ ] Confirmar domínio e onde vai hospedar (Netlify/Vercel/GitHub Pages)
 
 ## Deploy
