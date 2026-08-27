@@ -131,7 +131,7 @@ header {
   color: var(--text);
   cursor: pointer;
   padding: 10px;
-  margin: -10px -10px -10px 0;
+  margin: -10px -10px -10px auto;
 }
 
 /* ---------- Hero ---------- */
@@ -725,7 +725,7 @@ section { padding: 90px 24px; }
 
   /* Nesse tamanho a foto de fundo já não sobra espaço pro degradê ficar atrás do texto,
      então o texto ganha um cartão sólido ancorado embaixo, sobre a foto. */
-  .hero { align-items: flex-end; background-position: 65% 15%; }
+  .hero { align-items: flex-end; background-position: 78% 15%; }
   .hero-text {
     max-width: none;
     width: 100%;
