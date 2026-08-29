@@ -18,8 +18,8 @@ HTML/CSS/JS puro, sem build. Abrir `index.html` direto no navegador já funciona
 - [x] Foto da Lais na seção Sobre — `img/sobre-retrato.jpg`, retrato real dela
 - [x] 6º card do portfólio preenchido com foto real
 - [x] Logo real (monograma "lg" + nome) em `img/logo.png`, `img/logo-nome.png`, `img/logo-completa.png`
-- [ ] Avatar do linktree — ainda `.img-placeholder`, sem foto real
-- [ ] Confirmar domínio e onde vai hospedar (Netlify/Vercel/GitHub Pages)
+- [x] Avatar do linktree — `img/sobre-retrato.jpg` + logo (`img/logo.png`), sem mais placeholder (28/08/2026)
+- [x] Confirmar domínio e onde vai hospedar — GitHub Pages, ativo e buildado em https://ercsodre.github.io/lais-guimaraes-nail-design/
 
 ## Deploy
 
